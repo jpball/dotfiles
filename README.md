@@ -7,6 +7,11 @@
 `./$HOME/install.sh`
 
 ---
+# install.sh
+This script runs all initial configuration setup for all dotfiles.
+Symlinks are created in $HOME via 'stow'
+
+---
 # FAQ
 ## How to save changes?
 ```
