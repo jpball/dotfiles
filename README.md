@@ -19,3 +19,7 @@ git add *
 git commit -m "Updated files"
 git push -u origin main
 ```
+### Inspiration
+Some example dotfile repos for reference
+- https://github.com/holman/dotfiles
+- https://github.com/webpro/awesome-dotfiles
