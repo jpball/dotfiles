@@ -6,6 +6,10 @@ APT_PACKAGE_LIST=(
     "curl"
     "stow"
 )
+CONFIG_FILES=(
+    ".bashrc"
+    ".gitconfig"
+)
 
 # Bash settings
 set completion-ignore-case on # Ignore case when completing file names and commands
@@ -18,10 +22,6 @@ sudo apt update
 sudo apt install -y "${APT_PACKAGE_LIST[@]}" # Install packages from the list APT_PACKAGE_LIST
 
 # Backup any existing config files
-CONFIG_FILES=(
-    ".bashrc"
-    ".gitconfig"
-)
 for file in "${CONFIG_FILES[@]}"; do
     if [ -e "$HOME/$file" ]; then
         echo "Backing up existing $file to $file.bak"
