@@ -23,3 +23,4 @@ git push -u origin main
 Some example dotfile repos for reference
 - https://github.com/holman/dotfiles
 - https://github.com/webpro/awesome-dotfiles
+- https://github.com/Sin-cy/dotfiles
