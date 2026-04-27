@@ -14,7 +14,6 @@ export PATH=$PATH:$HOME/.local/opt/go/bin
 export PATH=$PATH:/usr/local/go/go
 
 # Run initialization commands
-fastfetch
 echo "   ____               o       , __                        
   (|   \              /      /|/  \              o       |
    |    | __   _  _    _|_    |___/ __,   _  _       __  |
