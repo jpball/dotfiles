@@ -1,0 +1,9 @@
+# Documentation : https://www.gnu.org/software/stow/manual/stow.html#Ignore-Lists
+# Ignore list for 'stow'
+# Each line must be Perl regex (https://www.geeksforgeeks.org/perl/perl-regex-cheat-sheet/)
+# Any file matching any listed regex will be ignored by local calls to stow
+
+\.git
+\.gitignore
+^/README.*
+^/install.sh
