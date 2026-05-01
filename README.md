@@ -1,24 +1,19 @@
 # Setup
 
-1. Clone this repo to your home folder
-`git clone https://github.com/jpball/dotfiles.git $HOME/dotfiles`
+1. Install chezmoi
+https://www.chezmoi.io/install/
 
-2. Run the install.sh script
-`./$HOME/install.sh`
-
----
-# install.sh
-This script runs all initial configuration setup for all dotfiles.
-Symlinks are created in $HOME via 'stow'
+3. Run the following chezmoi command
+`chezmoi init --apply --verbose https://github.com/jpball/dotfiles.git`
 
 ---
 # FAQ
 ## How to save changes?
-```
-git add *
-git commit -m "Updated files"
-git push -u origin main
-```
+
+`chezmoi add $FILE` adds $FILEfrom your home directory to the source directory.
+`chezmoi apply` updates your dotfiles from the source directory.
+`chezmoi update` pulls the latest changes from your remote repo and runs chezmoi apply.
+
 ### Inspiration
 Some example dotfile repos for reference
 - https://github.com/holman/dotfiles
